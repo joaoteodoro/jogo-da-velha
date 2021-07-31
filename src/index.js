@@ -64,7 +64,7 @@ function Square(props) {
       if (calculateWinner(squares) || squares[i]) {
         return;
       }
-      squares[i] = this.state.xIsNext ? "X" : "O";
+      squares[i] = this.state.xIsNext ? "A" : "B";
       this.setState({
         history: history.concat([
           {
